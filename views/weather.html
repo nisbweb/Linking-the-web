@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Info</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script defer src="/js/weather.js"></script>
+</head>
+<body style="background-image: url('../assets/weather_bg.png'); background-size: cover;"> 
+  <nav><a href="/">Home</a></nav>
+  <div class="container">
+    <h1><span class="icon"></span>Weather Information</h1>
+    <!-- Wrap input and button inside the input-container for alignment -->
+    <div class="input-container">
+      <input type="text" class="input" id="city" placeholder="Enter city">
+      <button class="weather_button" onclick="getWeather()">Get Weather</button>
+    </div>
+    <div id="weatherResult" class="card"></div>
+  </div>
+</body>
+</html>
