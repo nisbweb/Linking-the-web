@@ -1,5 +1,5 @@
 async function getNasaImage() {
-    const apiKey = "Ru1UxMUD3CPu9fc2qKtSoqKimhlaYEP4VMFXbldl";
+    const apiKey = "";
     const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`);
     const data = await response.json();
 
